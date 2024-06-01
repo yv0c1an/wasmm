@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.profits.mapper.WasmProfitsMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644801, '利润记录', '3', '1', 'profits', 'profits/profits/index', 1, 0, 'C', '0', '0', 'profits:profits:list', '#', 'admin', sysdate(), '', null, '利润记录菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644802, '利润记录查询', 1796742252029644801, '1',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644803, '利润记录新增', 1796742252029644801, '2',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644804, '利润记录修改', 1796742252029644801, '3',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644805, '利润记录删除', 1796742252029644801, '4',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644806, '利润记录导出', 1796742252029644801, '5',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796742252029644807, '利润记录导入', 1796742252029644801, '6',  '#', '', 1, 0, 'F', '0', '0', 'profits:profits:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

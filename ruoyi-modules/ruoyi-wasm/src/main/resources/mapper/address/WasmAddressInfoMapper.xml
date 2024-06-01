@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.addressInfo.mapper.WasmAddressInfoMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040770, '地址信息', '3', '1', 'addressInfo', 'address/addressInfo/index', 1, 0, 'C', '0', '0', 'address:addressInfo:list', '#', 'admin', sysdate(), '', null, '地址信息菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040771, '地址信息查询', 1796748302699040770, '1',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040772, '地址信息新增', 1796748302699040770, '2',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040773, '地址信息修改', 1796748302699040770, '3',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040774, '地址信息删除', 1796748302699040770, '4',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040775, '地址信息导出', 1796748302699040770, '5',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748302699040776, '地址信息导入', 1796748302699040770, '6',  '#', '', 1, 0, 'F', '0', '0', 'address:addressInfo:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

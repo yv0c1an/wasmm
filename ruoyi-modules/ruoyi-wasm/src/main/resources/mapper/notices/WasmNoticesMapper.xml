@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.notices.mapper.WasmNoticesMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055042, '通知公告', '3', '1', 'notices', 'notices/notices/index', 1, 0, 'C', '0', '0', 'notices:notices:list', '#', 'admin', sysdate(), '', null, '通知公告菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055043, '通知公告查询', 1796746488004055042, '1',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055044, '通知公告新增', 1796746488004055042, '2',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055045, '通知公告修改', 1796746488004055042, '3',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055046, '通知公告删除', 1796746488004055042, '4',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055047, '通知公告导出', 1796746488004055042, '5',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796746488004055048, '通知公告导入', 1796746488004055042, '6',  '#', '', 1, 0, 'F', '0', '0', 'notices:notices:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

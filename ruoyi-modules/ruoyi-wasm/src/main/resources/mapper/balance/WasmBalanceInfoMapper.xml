@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.balanceInfo.mapper.WasmBalanceInfoMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698817, '余额信息', '3', '1', 'balanceInfo', 'balance/balanceInfo/index', 1, 0, 'C', '0', '0', 'balance:balanceInfo:list', '#', 'admin', sysdate(), '', null, '余额信息菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698818, '余额信息查询', 1796748705297698817, '1',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698819, '余额信息新增', 1796748705297698817, '2',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698820, '余额信息修改', 1796748705297698817, '3',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698821, '余额信息删除', 1796748705297698817, '4',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698822, '余额信息导出', 1796748705297698817, '5',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796748705297698823, '余额信息导入', 1796748705297698817, '6',  '#', '', 1, 0, 'F', '0', '0', 'balance:balanceInfo:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

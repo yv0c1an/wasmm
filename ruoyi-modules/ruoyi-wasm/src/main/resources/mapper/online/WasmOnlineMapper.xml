@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.online.mapper.WasmOnlineMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318017, '在线用户信息', '3', '1', 'online', 'online/online/index', 1, 0, 'C', '0', '0', 'online:online:list', '#', 'admin', sysdate(), '', null, '在线用户信息菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318018, '在线用户信息查询', 1796744030431318017, '1',  '#', '', 1, 0, 'F', '0', '0', 'online:online:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318019, '在线用户信息新增', 1796744030431318017, '2',  '#', '', 1, 0, 'F', '0', '0', 'online:online:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318020, '在线用户信息修改', 1796744030431318017, '3',  '#', '', 1, 0, 'F', '0', '0', 'online:online:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318021, '在线用户信息删除', 1796744030431318017, '4',  '#', '', 1, 0, 'F', '0', '0', 'online:online:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318022, '在线用户信息导出', 1796744030431318017, '5',  '#', '', 1, 0, 'F', '0', '0', 'online:online:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796744030431318023, '在线用户信息导入', 1796744030431318017, '6',  '#', '', 1, 0, 'F', '0', '0', 'online:online:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ruoyi-modules</artifactId>
+        <groupId>org.dromara</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ruoyi-system</artifactId>
+
+    <description>
+        system系统模块
+    </description>
+
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-core</artifactId>
+        </dependency>
+        <!--   springdoc模块     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-doc</artifactId>
+        </dependency>
+        <!--   mybatis-plus模块     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-mybatis</artifactId>
+        </dependency>
+        <!--   翻译模块   -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-translation</artifactId>
+        </dependency>
+
+        <!-- OSS功能模块 -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-oss</artifactId>
+        </dependency>
+        <!--    日志模块     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-log</artifactId>
+        </dependency>
+        <!-- excel-->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-excel</artifactId>
+        </dependency>
+        <!-- SMS功能模块 -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-sms</artifactId>
+        </dependency>
+        <!--    多租户     -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.dromara</groupId>-->
+        <!--            <artifactId>ruoyi-common-tenant</artifactId>-->
+        <!--        </dependency>-->
+
+        <!--    加密解密     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-security</artifactId>
+        </dependency>
+        <!--    web     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-web</artifactId>
+        </dependency>
+        <!--    防重提交     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-idempotent</artifactId>
+        </dependency>
+        <!--    脱敏     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-sensitive</artifactId>
+        </dependency>
+        <!--  邮箱模块 -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-mail</artifactId>
+        </dependency>
+        <!--   定时任务模块     -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>ruoyi-common-job</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

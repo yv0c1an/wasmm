@@ -1,0 +1,9 @@
+chmod 744 run.sh
+
+cd /home/ruoyi-2024;/home/ruoyi-2024/run.sh start
+
+cd /home/ruoyi-2024;/home/ruoyi-2024/run.sh stop
+
+cd /home/ruoyi-2024;/home/ruoyi-2024/run.sh restart
+
+cd /home/ruoyi-2024;/home/ruoyi-2024/run.sh status

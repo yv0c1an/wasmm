@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.power.mapper.WasmPowerMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900673, '挖矿收益设置', '3', '1', 'power', 'wasm/power/index', 1, 0, 'C', '0', '0', 'wasm:power:list', '#', 'admin', sysdate(), '', null, '挖矿收益设置菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900674, '挖矿收益设置查询', 1796599948431900673, '1',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900675, '挖矿收益设置新增', 1796599948431900673, '2',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900676, '挖矿收益设置修改', 1796599948431900673, '3',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900677, '挖矿收益设置删除', 1796599948431900673, '4',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900678, '挖矿收益设置导出', 1796599948431900673, '5',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796599948431900679, '挖矿收益设置导入', 1796599948431900673, '6',  '#', '', 1, 0, 'F', '0', '0', 'wasm:power:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>

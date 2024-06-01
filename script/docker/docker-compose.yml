@@ -1,0 +1,175 @@
+version: '3'
+
+# docker-compose up -d mysql redis nginx
+# docker-compose up -d ruoyi-2024 monitor-admin xxl-job-admin
+# docker-compose up -d minio 按需使用
+services:
+  mysql:
+    image: mysql:8.0.33
+    container_name: mysql
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      # root 密码
+      MYSQL_ROOT_PASSWORD: JK4TMAZm2YnTJtZ7
+      # 初始化数据库(后续的初始化sql会在这个库执行)
+      MYSQL_DATABASE: ruoyi-2024
+    ports:
+      - "3306:3306"
+    volumes:
+      # 数据挂载
+      - /home/ubuntu/apps/mysql/data/:/var/lib/mysql/
+      # 配置挂载
+      - /home/ubuntu/apps/mysql/conf/:/etc/mysql/conf.d/
+    command:
+      # 将mysql8.0默认密码策略 修改为 原先 策略 (mysql8.0对其默认策略做了更改 会导致密码无法匹配)
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+#      --server-id=1
+#      --log-bin=mysql-bin
+#      --slave-skip-errors=all
+    privileged: true
+    network_mode: "host"
+#    restart: always
+
+  nginx:
+    image: nginx:1.23.4
+    container_name: nginx
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # 证书映射
+      - /home/ubuntu/apps/nginx/cert:/etc/nginx/cert
+      # 配置文件映射
+      - /home/ubuntu/apps/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      # 页面目录
+      - /home/ubuntu/apps/nginx/html:/usr/share/nginx/html
+      # 日志目录
+      - /home/ubuntu/apps/nginx/log:/var/log/nginx
+    privileged: true
+    network_mode: "host"
+#    restart: always
+
+  redis:
+    image: redis:6.2.12
+    container_name: redis
+    ports:
+      - "6379:6379"
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+    volumes:
+      # 配置文件
+      - /home/ubuntu/apps/redis/conf:/redis/config:rw
+      # 数据文件
+      - /home/ubuntu/apps/redis/data/:/redis/data/:rw
+    command: "redis-server /redis/config/redis.conf"
+    privileged: true
+    network_mode: "host"
+#    restart: always
+
+  minio:
+    image: minio/minio:RELEASE.2023-04-13T03-08-07Z
+    container_name: minio
+    ports:
+      # api 端口
+      - "9000:9000"
+      # 控制台端口
+      - "9001:9001"
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      # 管理后台用户名
+      MINIO_ROOT_USER: admin
+      # 管理后台密码，最小8个字符
+      MINIO_ROOT_PASSWORD: cK1TMAZm1YnTJtZ4
+      # https需要指定域名
+      #MINIO_SERVER_URL: "https://xxx.com:9000"
+      #MINIO_BROWSER_REDIRECT_URL: "https://xxx.com:9001"
+      # 开启压缩 on 开启 off 关闭
+      MINIO_COMPRESS: "off"
+      # 扩展名 .pdf,.doc 为空 所有类型均压缩
+      MINIO_COMPRESS_EXTENSIONS: ""
+      # mime 类型 application/pdf 为空 所有类型均压缩
+      MINIO_COMPRESS_MIME_TYPES: ""
+    volumes:
+      # 映射当前目录下的data目录至容器内/data目录
+      - /home/ubuntu/apps/minio/data:/data
+      # 映射配置目录
+      - /home/ubuntu/apps/minio/config:/root/.minio/
+    command: server --address ':9000' --console-address ':9001' /data  # 指定容器中的目录 /data
+    privileged: true
+    network_mode: "host"
+#    restart: always
+
+  ruoyi-2024:
+    image: ruoyi-2024:4.8.0
+    container_name: ruoyi-2024
+#    deploy:
+#      resources:
+#        limits:
+#          #          cpus: '0.50'
+#          memory: 500M
+    #        reservations:
+    #          cpus: '0.25'
+    #          memory: 20M
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      SERVER_PORT: 5401
+    volumes:
+      # 配置文件
+      - /home/ubuntu/apps/ruoyi-2024/logs/:/ruoyi/server/logs/
+      - /home/ubuntu/apps/ruoyi-2024/temp/:/ruoyi/server/temp/
+      # skywalking 探针
+#      - /docker/skywalking/agent/:/ruoyi/skywalking/agent
+    privileged: true
+    network_mode: "host"
+
+#  ruoyi-2024-2:
+#    image: ruoyi-2024:4.8.0
+#    container_name: ruoyi-2024-2
+#    environment:
+#      # 时区上海
+#      TZ: Asia/Shanghai
+#      SERVER_PORT: 5401
+#    volumes:
+#      # 配置文件
+#      - /home/ubuntu/apps/ruoyi-2024-2/logs/:/ruoyi/server/logs/
+#      - /home/ubuntu/apps/ruoyi-2024-2/temp/:/ruoyi/server/temp/
+#      # skywalking 探针
+##      - /docker/skywalking/agent/:/ruoyi/skywalking/agent
+#    privileged: true
+#    network_mode: "host"
+
+  monitor-admin:
+    image: monitor-admin:4.8.0
+    container_name: monitor-admin
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+    volumes:
+      # 配置文件
+      - /home/ubuntu/apps/monitor/logs/:/ruoyi/monitor/logs
+    privileged: true
+    network_mode: "host"
+
+  xxl-job-admin:
+    image: xxl-job-admin:4.8.0
+    container_name: xxl-job-admin
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+    volumes:
+      # 配置文件
+      - /home/ubuntu/apps/xxljob/logs/:/ruoyi/xxljob/logs
+    privileged: true
+    network_mode: "host"

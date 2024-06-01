@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  ruoyi-2024:
+    image: ruoyi-2024:4.8.0
+    container_name: ruoyi-2024
+#    deploy:
+#      resources:
+#        limits:
+#          #          cpus: '0.50'
+#          memory: 500M
+    #        reservations:
+    #          cpus: '0.25'
+    #          memory: 20M
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      SERVER_PORT: 5401
+    volumes:
+      # 配置文件
+      - /home/ubuntu/apps/ruoyi-2024/logs/:/ruoyi/server/logs/
+      - /home/ubuntu/apps/ruoyi-2024/temp/:/ruoyi/server/temp/
+      # skywalking 探针
+#      - /docker/skywalking/agent/:/ruoyi/skywalking/agent
+    privileged: true
+    network_mode: "host"
+    restart: always
+

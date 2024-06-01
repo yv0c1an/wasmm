@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dromara.wasm.main.mapper.WasmMainMapper">
+
+    <!--
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192770, '系统核心配置', '3', '1', 'main', 'main/main/index', 1, 0, 'C', '0', '0', 'main:main:list', '#', 'admin', sysdate(), '', null, '系统核心配置菜单');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192771, '系统核心配置查询', 1796747190684192770, '1',  '#', '', 1, 0, 'F', '0', '0', 'main:main:query',        '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192772, '系统核心配置新增', 1796747190684192770, '2',  '#', '', 1, 0, 'F', '0', '0', 'main:main:add',          '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192773, '系统核心配置修改', 1796747190684192770, '3',  '#', '', 1, 0, 'F', '0', '0', 'main:main:edit',         '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192774, '系统核心配置删除', 1796747190684192770, '4',  '#', '', 1, 0, 'F', '0', '0', 'main:main:remove',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192775, '系统核心配置导出', 1796747190684192770, '5',  '#', '', 1, 0, 'F', '0', '0', 'main:main:export',       '#', 'admin', sysdate(), '', null, '');
+
+    insert into sys_menu (menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, perms, icon, create_by, create_time, update_by, update_time, remark)
+    values(1796747190684192776, '系统核心配置导入', 1796747190684192770, '6',  '#', '', 1, 0, 'F', '0', '0', 'main:main:import',       '#', 'admin', sysdate(), '', null, '');
+    -->
+
+
+</mapper>
